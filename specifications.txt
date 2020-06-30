@@ -1,0 +1,35 @@
+- user
+-- name
+-- email
+
+- vendor
+-- id
+-- title
+-- description
+
+
+- product
+-- name
+-- slug
+-- version
+-- preview_url
+-- author
+-- screenshot_url
+-- rating
+-- num_ratings
+-- downloaded
+-- last_updated
+-- homepage
+-- description
+-- download_link
+-- tags
+
+- category
+-- id
+-- title
+-- description
+
+- tag
+-- id
+-- title
+-- description
