@@ -45,8 +45,8 @@
 <footer class="site-footer pb-4 pt-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">AwoThemes</div>
-            <div class="col-md-6 text-right">Powered by Awothemes</div>
+            <div class="col-md-6">TemplateScout</div>
+            <div class="col-md-6 text-right">Powered by TemplateScout</div>
         </div>
     </div>
 </footer>
