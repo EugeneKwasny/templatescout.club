@@ -45,8 +45,8 @@
 <footer class="site-footer pb-4 pt-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">Copyright © 2011-2020 TemplateScout</div>
-            <div class="col-md-6 text-right">Hosted by <a href="https://m.do.co/c/d299d8d2c578" target="blank" rel="nofollow">DigitalOcean</a></div>
+            <div class="col-md-6 small text-muted">Copyright © 2011-2020 TemplateScout</div>
+            <div class="col-md-6 text-right small text-muted">Hosted by <a href="https://m.do.co/c/d299d8d2c578" target="blank" rel="nofollow">DigitalOcean</a></div>
         </div>
     </div>
 </footer>
