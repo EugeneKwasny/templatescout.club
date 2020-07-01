@@ -39,7 +39,7 @@
                   </ul>
                   
                   <div class="mt-3">
-                    <a href="#" target="blank">Get WordPress hosting</a>
+                    <a href="https://www.bluehost.com/track/awothemes/" target="blank" rel="nofollow">Get WordPress hosting</a>
                 </div>
             </aside>
         </div> 
