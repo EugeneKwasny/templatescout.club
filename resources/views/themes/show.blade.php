@@ -1,5 +1,7 @@
 @extends('layouts.app')
 
+@section('title', $theme->name . ' - free Wordpress Theme')
+@section('description', 'Download now ' . $theme->name. ' - free Wordpress Theme HandPicked by TemplateScout')
 
 @section('content')
 <section class="main mt-4 mb-4">

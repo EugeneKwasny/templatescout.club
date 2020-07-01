@@ -1,5 +1,8 @@
 @extends('layouts.app')
 
+@section('title', '100+ Collection of Free WordPress Themes Handpicked by TemplateScout')
+@section('description', 'Download now Collection of Free WordPress Themes Handpicked by TemplateScout!')
+
 @section('content')
     <section class="main mt-4">
         <div class="container">
