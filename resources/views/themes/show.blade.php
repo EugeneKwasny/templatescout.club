@@ -14,9 +14,13 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card border-0 bg-transparent">
-                <img src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm " alt="{{$theme->name}}">
+                <img src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm" alt="{{$theme->name}}">
                     <div class="card-body py-4 px-0">
-                        <h5>Description</h5>
+                        <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
+                        <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-md-none">View demo</a>
+        
+        
+                        <h5 class="mt-4 mt-md-0">Description</h5>
                         <hr class="mt-0">
                       <p class="card-text">{{$theme->description}}</p>
                       <p class="card-text text-muted">Tags: {{$theme->tags()}}</p>
@@ -24,12 +28,12 @@
                   </div>
                 
             </div>
-            <aside class="sidebar col-md-4 pl-4">
-                <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success">Free download</a>
-                <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3">View demo</a>
+            <aside class="sidebar col-md-4 pl-md-4">
+                <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success d-none d-md-block">Free download</a>
+                <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-none d-md-block">View demo</a>
 
 
-                <div class="mt-3">
+                <div class="mt-md-3">
                     <a target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}">Support forum</a>
                 </div>
                 <p class="card-text text-muted mt-3">This item is licensed  100% GPL </p>
