@@ -16,14 +16,23 @@
                 <div class="card border-0 bg-transparent">
                 <img src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm" alt="{{$theme->name}}">
                     <div class="card-body py-4 px-0">
+                        @if($theme->download_link)
                         <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
-                        <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-md-none">View demo</a>
-        
-        
-                        <h5 class="mt-4 mt-md-0">Description</h5>
-                        <hr class="mt-0">
-                      <p class="card-text">{{$theme->description}}</p>
-                      <p class="card-text text-muted">Tags: {{$theme->tags()}}</p>
+                        @endif
+
+                        @if($theme->preview_url)
+                            <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-md-none">View demo</a>
+                        @endif
+
+                        @if($theme->description)
+                            <h5 class="mt-4 mt-md-0">Description</h5>
+                            <hr class="mt-0">
+                            <p class="card-text">{{$theme->description}}</p>
+                        @endif
+
+                        @if($theme->tags())
+                            <p class="card-text text-muted">Tags: {{$theme->tags()}}</p>
+                        @endif
                     </div>
                   </div>
                 
@@ -39,9 +48,19 @@
                 <p class="card-text text-muted mt-3">This item is licensed  100% GPL </p>
                 <ul class="list-group list-group-flush">
                     <li class="list-group-item px-0  bg-transparent">Author: <a target="blank" href="https://wordpress.org/themes/author/{{$theme->vendor->name}}">{{$theme->vendor->name}}</a></li>
-                    <li class="list-group-item px-0 bg-transparent">Version: {{$theme->version}}</li>
-                    <li class="list-group-item px-0 bg-transparent">Last updated: {{$theme->last_updated}}</li>
-                    <li class="list-group-item px-0 bg-transparent">Downloads: {{$theme->downloaded}}</li>
+                    
+                    @if($theme->version)
+                        <li class="list-group-item px-0 bg-transparent">Version: {{$theme->version}}</li>
+                    @endif
+
+                    @if($theme->last_updated)
+                        <li class="list-group-item px-0 bg-transparent">Last updated: {{$theme->last_updated}}</li>
+                    @endif
+
+                    @if($theme->downloaded)
+                        <li class="list-group-item px-0 bg-transparent">Downloads: {{$theme->downloaded}}</li>
+                    @endif
+                    
                   </ul>
                   
                   <div class="mt-3">
