@@ -18,6 +18,10 @@ class Theme extends Model
     }
 
     public function tags(){
+        if(!$this->tags){
+            return;
+        }
+
         $tagsArray = json_decode($this->tags);
 
         foreach($tagsArray as $slug=>$label){
