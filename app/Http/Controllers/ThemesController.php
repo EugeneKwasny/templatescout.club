@@ -15,7 +15,7 @@ class ThemesController extends Controller
 
     public function show(Request $request, $slug){
   
-        $theme = Theme::where('slug', $slug)->first();
+        $theme = Theme::where('slug', $slug)->firstOrFail();
         return view('themes.show', ['theme' => $theme]);
     }
 }
