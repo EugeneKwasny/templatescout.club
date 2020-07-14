@@ -18,4 +18,10 @@ class ThemesController extends Controller
         $theme = Theme::where('slug', $slug)->firstOrFail();
         return view('themes.show', ['theme' => $theme]);
     }
+
+    public function featured()
+    {
+        $themes = Theme::where('featured', 1)->paginate(9);
+        return view('themes.featured', ['themes' => $themes]);
+    }
 }
