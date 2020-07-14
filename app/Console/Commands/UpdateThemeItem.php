@@ -68,25 +68,30 @@ class UpdateThemeItem extends Command
 
                 $themeArray = $response->json();
 
-                $theme->fill([
-                    'name' => $themeArray['name'],
-                    'version' => $themeArray['version'],
-                    'preview_url' => $themeArray['preview_url'],
-                    //'author' => $themeArray['author'],
-                    'screenshot_url' => $themeArray['screenshot_url'],
-                    'rating' => $themeArray['rating'],
-                    'num_ratings' => $themeArray['num_ratings'],
-                    'downloaded' => $themeArray['downloaded'],
-                    'last_updated' => $themeArray['last_updated'],
-                    'homepage' => $themeArray['homepage'],
-                    'description' => $themeArray['sections']['description'],
-                    'template' => $themeArray['template'] ?? null,
-                    'download_link' => $themeArray['download_link'],
-                    'tags' => json_encode($themeArray['tags']),
-                    'checksum' => $newChecksum 
-                ])->save();
+                if(is_array($themeArray)){
+                    $theme->fill([
+                        'name' => $themeArray['name'],
+                        'version' => $themeArray['version'],
+                        'preview_url' => $themeArray['preview_url'],
+                        //'author' => $themeArray['author'],
+                        'screenshot_url' => $themeArray['screenshot_url'],
+                        'rating' => $themeArray['rating'],
+                        'num_ratings' => $themeArray['num_ratings'],
+                        'downloaded' => $themeArray['downloaded'],
+                        'last_updated' => $themeArray['last_updated'],
+                        'homepage' => $themeArray['homepage'],
+                        'description' => $themeArray['sections']['description'],
+                        'template' => $themeArray['template'] ?? null,
+                        'download_link' => $themeArray['download_link'],
+                        'tags' => json_encode($themeArray['tags']),
+                        'checksum' => $newChecksum 
+                    ])->save();
 
-                $bar->advance();
+                    $bar->advance();
+                }
+                
+
+                
             }
 
            
