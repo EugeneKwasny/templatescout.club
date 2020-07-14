@@ -23,7 +23,7 @@
             <a class="nav-link" href="/themes" >All themes</a>
           </li>
       </ul>
-      <button type="button" class="btn btn-outline-dark">Support</button>
+      <button type="button" class="btn btn-outline-dark d-none d-lg-block">Support</button>
 </div>
 
     </div>
