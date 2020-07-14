@@ -8,7 +8,10 @@ use App\Theme;
 class ThemesController extends Controller
 {
     public function index(){
-        $themes = Theme::orderBy('last_updated', 'desc')->paginate(9);
+        $themes = Theme::orderBy('num_ratings', 'desc')
+                        ->orderBy('rating', 'desc')
+                        ->orderBy('last_updated', 'desc')
+                        ->paginate(9);
 
         return view('themes.index', ['themes' => $themes]);
     }
