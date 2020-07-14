@@ -1,4 +1,4 @@
-<div class="card" style="width: 20rem;">
+<div class="card mb-4">
     <a href="{{$theme->theme_path()}}">
         <img src="{{$theme->screenshot_url}}" class="card-img-top" alt="{{$theme->name}}">
     </a>
@@ -8,10 +8,10 @@
         </a>
 
         <div class="row  align-items-center justify-content-between">   
-            <div class="col">
+            <div class="col-lg">
                 <a href="{{$theme->theme_path()}}" class="card-link">Free download</a>   
             </div>
-            <div class="col text-right">
+            <div class="col-lg text-lg-right">
                 <span class="card-subtitle text-muted small">{{$theme->downloaded}} downloads</span>  
             </div>         
 
