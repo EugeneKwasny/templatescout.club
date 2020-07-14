@@ -1,4 +1,4 @@
-<div class="card mb-4">
+<div class="card mb-4 shadow-sm border-0">
     <a href="{{$theme->theme_path()}}">
         <img src="{{$theme->screenshot_url}}" class="card-img-top" alt="{{$theme->name}}">
     </a>

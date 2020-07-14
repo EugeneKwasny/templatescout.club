@@ -4,7 +4,7 @@
 @section('description', 'Download now Collection of Free WordPress Themes Handpicked by TemplateScout!')
 
 @section('content')
-    <section class="main mt-4">
+    <section class="main mt-5">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">

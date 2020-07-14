@@ -4,7 +4,7 @@
 @section('description', 'Download now ' . $theme->name. ' - free Wordpress Theme HandPicked by TemplateScout')
 
 @section('content')
-<section class="main mt-4 mb-4">
+<section class="main mt-5 mb-5">
     <div class="container">
         <div class="row"> 
             <div class="col">
@@ -13,7 +13,7 @@
         </div>
         <div class="row">
             <div class="col-md-9">
-                <div class="card">
+                <div class="card shadow-sm border-0">
                 <img src="{{$theme->screenshot_url}}" class="card-img-top" alt="{{$theme->name}}">
                     <div class="card-body">
                       <p class="card-text">{{$theme->description}}</p>
@@ -22,11 +22,11 @@
                   </div>
                 
             </div>
-            <aside class="sidebar col-md-3 px-4 py-4 bg-white rounded">
-                <div class="btn-group">
-                    <a type="button" href="{{$theme->download_link}}" class="btn btn-outline-success">Free download</a>
-                    <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn btn-outline-info">Demo</a>
-                </div>
+            <aside class="sidebar shadow-sm col-md-3 px-4 py-4 bg-white rounded">
+                <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success">Free download</a>
+                <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3">View demo</a>
+
+
                 <div class="mt-3">
                     <a target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}">Support forum</a>
                 </div>
