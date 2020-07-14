@@ -72,8 +72,10 @@ class GetThemesList extends Command
 
                     unset($theme['author']);
                     $theme['vendor_id'] = $vendor->id;
-                    Theme::create($theme);
-
+                    $newTheme = Theme::firstOrNew(['slug' => $theme['slug']]);
+                    $newTheme->fill($theme);
+                    $newTheme->save();
+                    
                    $bar->advance();
             }
 
