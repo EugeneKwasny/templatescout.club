@@ -10,14 +10,14 @@
         <li class="nav-item active">
             <span class="nav-link"> Browse by:</span>
         </li>
-        <li class="nav-item active">
+        {{-- <li class="nav-item active">
           <a class="nav-link" href="#">Categories</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#">Apearance</a>
-        </li>
+        </li> --}}
         <li class="nav-item">
-          <a class="nav-link" href="#" >Featured</a>
+          <a class="nav-link" href="/featured" >Featured</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/themes" >All themes</a>
