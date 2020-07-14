@@ -1,7 +1,7 @@
 <div class="footer-widgets pb-5 pt-5 border-bottom">
     <div class="container">
         <div class="row">
-            <div class="widget col">
+            <div class="widget col-sm mt-4 mt-sm-0">
                 <h6>Company</h6>
                 <ul class="list-unstyled mb-0">
                     <li><a href="#">About</a></li>
@@ -10,7 +10,7 @@
                     <li><a href="#">Contact US</a></li>
                 </ul>
             </div>
-            <div class="widget col">
+            <div class="widget col-sm mt-4 mt-sm-0">
                 <h6>Themes</h6>
                 <ul class="list-unstyled mb-0">
                     <li><a href="#">Latest</a></li>
@@ -20,7 +20,7 @@
                     <li><a href="#">WooCommerce</a></li>
                 </ul>
             </div>
-            <div class="widget col">
+            <div class="widget col-sm mt-4 mt-sm-0">
                 <h6>Community</h6>
                 <ul class="list-unstyled mb-0">
                     <li><a href="#">Online Help Center</a></li>
@@ -28,7 +28,7 @@
                     <li><a href="#">Blog</a></li>
                 </ul>
             </div>
-            <div class="widget col">
+            <div class="widget col-sm mt-4 mt-sm-0">
                 <h6>Follow us</h6>
                 <ul class="list-unstyled mb-0">
                     <li><a href="#">Facebook</a></li>
