@@ -15,7 +15,7 @@
                 <ul class="list-unstyled mb-0">
                     <li><a class="text-muted" href="#">Latest</a></li>
                     <li><a class="text-muted" href="#">Best selling</a></li>
-                    <li><a class="text-muted" href="#">Fetaured</a></li>
+                    <li><a class="text-muted" href="/featured">Featured</a></li>
                     <li><a class="text-muted" href="#">Creative</a></li>
                     <li><a class="text-muted" href="#">WooCommerce</a></li>
                 </ul>
@@ -45,7 +45,7 @@
 <footer class="site-footer pb-4 pt-4">
     <div class="container">
         <div class="row">
-            <div class="col-md-6 small text-muted">Copyright © 2011-2020 TemplateScout</div>
+            <div class="col-md-6 small text-muted">Copyright © 2020 TemplateScout.club</div>
             <div class="col-md-6 text-md-right small text-muted mt-3 mt-md-0">Hosted by <a href="https://m.do.co/c/d299d8d2c578" target="blank" rel="nofollow">DigitalOcean</a></div>
         </div>
     </div>
