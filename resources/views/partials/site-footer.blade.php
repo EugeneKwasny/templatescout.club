@@ -31,12 +31,13 @@
             <div class="widget col-sm mt-4 mt-sm-0">
                 <h6>Follow us</h6>
                 <ul class="list-unstyled mb-0">
-                    <li><a class="text-muted" href="#">Facebook</a></li>
-                    <li><a class="text-muted" href="#">Twitter</a></li>
-                    <li><a class="text-muted" href="#">Themeforest</a></li>
-                    <li><a class="text-muted" href="#">CreativeMarket</a></li>
-                    <li><a class="text-muted" href="#">WordPress.org</a></li>
-                    <li><a class="text-muted" href="#">Behance</a></li>
+                    <li><a class="text-muted" rel="nofollow" href="https://profiles.wordpress.org/templatescout/">WordPress.org</a></li>
+                    <li><a class="text-muted" rel="nofollow" href="https://www.facebook.com/TemplateScout-105070061288581">Facebook</a></li>
+                    <li><a class="text-muted" rel="nofollow" href="https://twitter.com/templatescout">Twitter</a></li>
+                    <li><a class="text-muted" rel="nofollow" href="https://www.behance.net/TemplateScout">Behance</a></li>
+                    <li><a class="text-muted" rel="nofollow" href="https://creativemarket.com/users/templatescout">CreativeMarket</a></li>
+
+                    {{-- <li><a class="text-muted" rel="nofollow" href="#">Themeforest</a></li> --}}
                 </ul>
             </div>
         </div>
