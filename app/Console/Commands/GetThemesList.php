@@ -43,7 +43,8 @@ class GetThemesList extends Command
     public function handle()
     {
         $response = Http::get('https://api.wordpress.org/themes/info/1.1/', [
-            'action' => 'query_themes'
+            'action' => 'query_themes',
+            'request[browse]' => 'new'
         ]);
 
         $responseArray = $response->json();
@@ -63,6 +64,7 @@ class GetThemesList extends Command
         for($i=1;$i<=$pages_count;$i++){
             $response = Http::get('https://api.wordpress.org/themes/info/1.1/', [
                 'action' => 'query_themes',
+                'request[browse]' => 'new',
                 'request[page]' => $i
             ]);
             $responseArray = $response->json();
