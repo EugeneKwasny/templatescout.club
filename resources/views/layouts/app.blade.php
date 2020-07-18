@@ -2,7 +2,6 @@
 <html lang="en"> 
 <head>
 <!-- Global site tag (gtag.js) - Google Analytics -->
-<link rel="dns-prefetch" href="//www.google-analytics.com">
 <script async src="https://www.googletagmanager.com/gtag/js?id=UA-61458036-3"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
