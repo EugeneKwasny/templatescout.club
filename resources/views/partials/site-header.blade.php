@@ -16,11 +16,12 @@
         <li class="nav-item">
           <a class="nav-link" href="#">Apearance</a>
         </li> --}}
+      
+      <li class="nav-item">
+        <a class="nav-link" href="/recent" >Recent</a>
+      </li>
         <li class="nav-item">
           <a class="nav-link" href="/featured" >Featured</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/recent" >Recent</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="/themes" >All themes</a>
