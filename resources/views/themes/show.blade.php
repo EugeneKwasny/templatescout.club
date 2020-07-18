@@ -16,7 +16,7 @@
         <div class="row">
             <div class="col-md-8">
                 <div class="card border-0 bg-transparent">
-                <img src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm" alt="{{$theme->name}}">
+                <img width="730" src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm" alt="{{$theme->name}}">
                     <div class="card-body py-4 px-0">
                         @if($theme->download_link)
                         <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
