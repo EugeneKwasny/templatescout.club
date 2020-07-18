@@ -1,8 +1,10 @@
-@extends('layouts.themes-show')
+@extends('layouts.app')
 
 @section('title', $theme->name . ' - free Wordpress Theme')
 @section('description', 'Download now ' . $theme->name. ' - free Wordpress Theme HandPicked by TemplateScout')
-
+@section('styles')
+    <link rel="stylesheet" href="{{ mix('/css/themes.show.css') }}">
+@endsection
 @section('content')
 <section class="main mt-5 mb-5">
     <div class="container">

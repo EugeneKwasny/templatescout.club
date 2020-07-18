@@ -2,7 +2,9 @@
 
 @section('title', $title)
 @section('description', 'Download Free WordPress Themes Handpicked by TemplateScout team!')
-
+@section('styles')
+    <link rel="stylesheet" href="{{ mix('/css/app.css') }}">
+@endsection
 @section('content')
     <section class="main mt-5">
         <div class="container">
