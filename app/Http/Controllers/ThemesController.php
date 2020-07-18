@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Theme;
+use Carbon\Carbon;
 
 class ThemesController extends Controller
 {
@@ -26,5 +27,21 @@ class ThemesController extends Controller
     {
         $themes = Theme::where('featured', 1)->paginate(9);
         return view('themes.featured', ['themes' => $themes]);
+    }
+
+    public function recent(){
+        $date = Carbon::now();
+        $curmonth = $date->format('F, Y');
+        $title = 'Recently Added Free WordPress Themes | '. $date->format('F, Y');
+
+        $themes = Theme::where('created_at', '>=', $date->startOfMonth())
+                        ->orderBy('created_at', 'desc')
+                        ->orderBy('downloaded', 'desc')
+                        ->paginate(9);
+        return view('themes.recent', [
+            'themes' => $themes, 
+            'title' => $title,
+            'curmonth' => $curmonth
+            ]);
     }
 }
