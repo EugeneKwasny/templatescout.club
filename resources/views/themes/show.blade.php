@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.themes-show')
 
 @section('title', $theme->name . ' - free Wordpress Theme')
 @section('description', 'Download now ' . $theme->name. ' - free Wordpress Theme HandPicked by TemplateScout')
