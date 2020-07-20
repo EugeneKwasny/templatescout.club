@@ -69,7 +69,7 @@
                   </ul>
                   
                   <div class="mt-3">
-                    <a href="/wordpress-hosting">Get WordPress hosting</a>
+                    <a target="blank" href="/wordpress-hosting">Get WordPress hosting</a>
                 </div>
             </aside>
         </div> 
