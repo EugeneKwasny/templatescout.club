@@ -10,14 +10,15 @@
         <div class="row  align-items-center justify-content-between">   
             @if($theme->rating)
                 <div class="col-lg">
-                    <span class="card-subtitle text-muted small">Rating: {{$theme->rating/20}}/5 | {{$theme->num_ratings}} reviews</span>    
+                    <div class="card-subtitle text-muted small">Rating: {{$theme->rating/20}}/5 </div>    
+                    {{-- <div class="card-subtitle text-muted small">{{$theme->num_ratings}} reviews</div> --}}
                 </div>
             @endif
             <div class="col-lg 
                 @if($theme->rating)
                 text-lg-right
                 @endif">
-                <span class="card-subtitle text-muted small">{{$theme->downloaded}} downloads</span>  
+                <span class="card-subtitle text-muted small">Downloads: {{number_format($theme->downloaded, 0, ',', ' ')}} </span>  
             </div>         
 
         </div>

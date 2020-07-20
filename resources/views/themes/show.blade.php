@@ -53,7 +53,7 @@
                 <li class="list-group-item px-0 bg-transparent">Rating: {{$theme->rating/20}}/5 <span class="text-muted">based on wordpress.org <a class="text-muted"  rel="nofollow" target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}/reviews/">reviews</a></span></li>
                     @endif
                     @if($theme->downloaded)
-                        <li class="list-group-item px-0 bg-transparent">Downloads: {{$theme->downloaded}}</li>
+                        <li class="list-group-item px-0 bg-transparent">Downloads: {{number_format($theme->downloaded, 0, ',', ' ')}}</li>
                     @endif
 
                     @if($theme->version)
