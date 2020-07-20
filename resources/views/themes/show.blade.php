@@ -49,8 +49,13 @@
                 </div>
                 <p class="card-text text-muted mt-3">This item is licensed  100% GPL </p>
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item px-0  bg-transparent">Author: <a target="blank" href="https://wordpress.org/themes/author/{{$theme->vendor->name}}">{{$theme->vendor->name}}</a></li>
-                    
+                    @if($theme->rating)
+                <li class="list-group-item px-0 bg-transparent">Rating: {{$theme->rating/20}}/5 <span class="text-muted">based on wordpress.org <a class="text-muted" target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}/reviews/">reviews</a></span></li>
+                    @endif
+                    @if($theme->downloaded)
+                        <li class="list-group-item px-0 bg-transparent">Downloads: {{$theme->downloaded}}</li>
+                    @endif
+
                     @if($theme->version)
                         <li class="list-group-item px-0 bg-transparent">Version: {{$theme->version}}</li>
                     @endif
@@ -59,10 +64,8 @@
                         <li class="list-group-item px-0 bg-transparent">Last updated: {{$theme->last_updated}}</li>
                     @endif
 
-                    @if($theme->downloaded)
-                        <li class="list-group-item px-0 bg-transparent">Downloads: {{$theme->downloaded}}</li>
-                    @endif
-                    
+                    <li class="list-group-item px-0  bg-transparent">Author: <a class="text-dark" target="blank" href="https://wordpress.org/themes/author/{{$theme->vendor->name}}">{{$theme->vendor->name}}</a></li>
+
                   </ul>
                   
                   <div class="mt-3">

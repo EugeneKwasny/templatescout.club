@@ -9,7 +9,7 @@
 
         <div class="row  align-items-center justify-content-between">   
             <div class="col-lg">
-                <a href="{{$theme->theme_path()}}" class="card-link">Free download</a>   
+                <span class="card-subtitle text-muted small">Rating: {{$theme->rating/20}}/5 | {{$theme->num_ratings}} reviews</span>    
             </div>
             <div class="col-lg text-lg-right">
                 <span class="card-subtitle text-muted small">{{$theme->downloaded}} downloads</span>  
