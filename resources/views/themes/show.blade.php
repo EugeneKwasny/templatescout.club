@@ -44,9 +44,6 @@
                 <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-none d-md-block">View demo</a>
 
 
-                <div class="mt-md-3">
-                    <a target="blank" rel="nofollow" href="https://wordpress.org/support/theme/{{$theme->slug}}">Support forum</a>
-                </div>
                 <p class="card-text text-muted mt-3">This item is licensed  100% GPL </p>
                 <ul class="list-group list-group-flush">
                     @if($theme->rating)
@@ -55,6 +52,7 @@
                     @if($theme->downloaded)
                         <li class="list-group-item px-0 bg-transparent">Downloads: {{number_format($theme->downloaded, 0, ',', ' ')}}</li>
                     @endif
+                    <li class="list-group-item px-0  bg-transparent">Support: regular support via <a target="blank" rel="nofollow" href="https://wordpress.org/support/theme/{{$theme->slug}}">forum</a></li>
 
                     @if($theme->version)
                         <li class="list-group-item px-0 bg-transparent">Version: {{$theme->version}}</li>
@@ -68,9 +66,9 @@
 
                   </ul>
                   
-                  <div class="mt-3">
+                  {{-- <div class="mt-3">
                     <a target="blank" href="/wordpress-hosting">Get WordPress hosting</a>
-                </div>
+                </div> --}}
             </aside>
         </div> 
     </div>
