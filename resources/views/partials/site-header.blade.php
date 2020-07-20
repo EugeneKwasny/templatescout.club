@@ -27,7 +27,7 @@
             <a class="nav-link" href="/themes" >All themes</a>
           </li>
       </ul>
-      <button type="button" class="btn btn-outline-dark d-none d-lg-block">Support</button>
+      <a type="button" href="/wordpress-hosting" target="blank" class="text-muted">Get WordPress hosting</a>
 </div>
 
     </div>
