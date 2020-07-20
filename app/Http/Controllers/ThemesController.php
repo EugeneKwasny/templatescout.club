@@ -30,11 +30,13 @@ class ThemesController extends Controller
     }
 
     public function recent(){
-        $date = Carbon::now();
+        //$date = Carbon::now();
+        $date = Carbon::create(2020, 07, 19);
         $curmonth = $date->format('F, Y');
         $title = 'Recently Added Free WordPress Themes | '. $date->format('F, Y');
 
-        $themes = Theme::where('created_at', '>=', $date->startOfMonth())
+
+        $themes = Theme::where('created_at', '>=', $date->format('Y-m-d'))
                         ->orderBy('created_at', 'desc')
                         ->orderBy('downloaded', 'desc')
                         ->paginate(9);
