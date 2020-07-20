@@ -9,8 +9,9 @@ use Carbon\Carbon;
 class ThemesController extends Controller
 {
     public function index(){
-        $themes = Theme::orderBy('num_ratings', 'desc')
-                        ->orderBy('rating', 'desc')
+        $themes = Theme::orderBy('rating', 'desc')
+                        ->orderBy('num_ratings', 'desc')
+                        ->orderBy('downloaded', 'desc')
                         ->orderBy('last_updated', 'desc')
                         ->paginate(9);
 
