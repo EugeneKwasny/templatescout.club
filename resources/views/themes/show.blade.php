@@ -19,11 +19,11 @@
                 <img width="730" src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm" alt="{{$theme->name}}">
                     <div class="card-body py-4 px-0">
                         @if($theme->download_link)
-                        <a type="button" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
+                        <a type="button"  rel="nofollow" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
                         @endif
 
                         @if($theme->preview_url)
-                            <a type="button" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-md-none">View demo</a>
+                            <a type="button"  rel="nofollow" target="blank" href="{{$theme->preview_url}}" class="btn btn-block btn-info mt-3 d-md-none">View demo</a>
                         @endif
 
                         @if($theme->description)
@@ -45,12 +45,12 @@
 
 
                 <div class="mt-md-3">
-                    <a target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}">Support forum</a>
+                    <a target="blank" rel="nofollow" href="https://wordpress.org/support/theme/{{$theme->slug}}">Support forum</a>
                 </div>
                 <p class="card-text text-muted mt-3">This item is licensed  100% GPL </p>
                 <ul class="list-group list-group-flush">
                     @if($theme->rating)
-                <li class="list-group-item px-0 bg-transparent">Rating: {{$theme->rating/20}}/5 <span class="text-muted">based on wordpress.org <a class="text-muted" target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}/reviews/">reviews</a></span></li>
+                <li class="list-group-item px-0 bg-transparent">Rating: {{$theme->rating/20}}/5 <span class="text-muted">based on wordpress.org <a class="text-muted"  rel="nofollow" target="blank" href="https://wordpress.org/support/theme/{{$theme->slug}}/reviews/">reviews</a></span></li>
                     @endif
                     @if($theme->downloaded)
                         <li class="list-group-item px-0 bg-transparent">Downloads: {{$theme->downloaded}}</li>
@@ -64,7 +64,7 @@
                         <li class="list-group-item px-0 bg-transparent">Last updated: {{$theme->last_updated}}</li>
                     @endif
 
-                    <li class="list-group-item px-0  bg-transparent">Author: <a class="text-dark" target="blank" href="https://wordpress.org/themes/author/{{$theme->vendor->name}}">{{$theme->vendor->name}}</a></li>
+                    <li class="list-group-item px-0  bg-transparent">Author: <a class="text-dark" target="blank"  rel="nofollow" href="https://wordpress.org/themes/author/{{$theme->vendor->name}}">{{$theme->vendor->name}}</a></li>
 
                   </ul>
                   
