@@ -16,7 +16,9 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect('themes', 302);
 });
-
+Route::get('/wordpress-hosting', function (){
+    return redirect('https://www.bluehost.com/track/awothemes/', 302);
+});
 
 Route::get('/recent', 'ThemesController@recent');
 Route::get('/featured', 'ThemesController@featured');

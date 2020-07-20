@@ -68,9 +68,9 @@
 
                   </ul>
                   
-                  {{-- <div class="mt-3">
-                    <a href="https://www.bluehost.com/track/awothemes/" target="blank" rel="nofollow">Get WordPress hosting</a>
-                </div> --}}
+                  <div class="mt-3">
+                    <a href="/wordpress-hosting">Get WordPress hosting</a>
+                </div>
             </aside>
         </div> 
     </div>
