@@ -19,7 +19,7 @@
                 <img width="730" src="{{$theme->screenshot_url}}" class="card-img-top shadow-sm" alt="{{$theme->name}}">
                     <div class="card-body py-4 px-0">
                         @if($theme->download_link)
-                        <a type="button"  rel="nofollow" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
+                            <a type="button"  rel="nofollow" href="{{$theme->download_link}}" class="btn btn-block btn-success d-md-none">Free download</a>
                         @endif
 
                         @if($theme->preview_url)

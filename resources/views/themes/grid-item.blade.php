@@ -8,10 +8,15 @@
         </a>
 
         <div class="row  align-items-center justify-content-between">   
-            <div class="col-lg">
-                <span class="card-subtitle text-muted small">Rating: {{$theme->rating/20}}/5 | {{$theme->num_ratings}} reviews</span>    
-            </div>
-            <div class="col-lg text-lg-right">
+            @if($theme->rating)
+                <div class="col-lg">
+                    <span class="card-subtitle text-muted small">Rating: {{$theme->rating/20}}/5 | {{$theme->num_ratings}} reviews</span>    
+                </div>
+            @endif
+            <div class="col-lg 
+                @if($theme->rating)
+                text-lg-right
+                @endif">
                 <span class="card-subtitle text-muted small">{{$theme->downloaded}} downloads</span>  
             </div>         
 
