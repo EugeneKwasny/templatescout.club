@@ -49,9 +49,9 @@ class ThemesController extends Controller
     }
 
     public function popular(){
-        $themes = Theme::orderBy('downloaded', 'desc')
-                        ->orderBy('rating', 'desc')
+        $themes = Theme::orderBy('rating', 'desc')
                         ->orderBy('num_ratings', 'desc')
+                        ->orderBy('downloaded', 'desc')
                         ->orderBy('last_updated', 'desc')
                         ->paginate(9);
 
