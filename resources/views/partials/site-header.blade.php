@@ -18,6 +18,9 @@
         </li> --}}
       
       <li class="nav-item">
+        <a class="nav-link" href="/popular" >Popular</a>
+      </li>
+      <li class="nav-item">
         <a class="nav-link" href="/recent" >Recent</a>
       </li>
         <li class="nav-item">
