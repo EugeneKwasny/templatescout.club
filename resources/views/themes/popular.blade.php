@@ -10,7 +10,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h1>Popular Free WordPress Themes </h1>
+                    <h1>Free & Popular WordPress Themes </h1>
                     <div class="card-columns mt-4">
                         @foreach ($themes as $theme)
                             @include('themes.grid-item', ['theme' => $theme])
