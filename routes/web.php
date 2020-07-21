@@ -20,6 +20,7 @@ Route::get('/wordpress-hosting', function (){
     return redirect('https://www.bluehost.com/track/awothemes/', 302);
 });
 
+Route::get('/popular', 'ThemesController@popular');
 Route::get('/recent', 'ThemesController@recent');
 Route::get('/featured', 'ThemesController@featured');
 Route::get('/themes', 'ThemesController@index');
