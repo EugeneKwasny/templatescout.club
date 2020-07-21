@@ -9,10 +9,10 @@ use Carbon\Carbon;
 class ThemesController extends Controller
 {
     public function index(){
-        $themes = Theme::orderBy('rating', 'desc')
-                        ->orderBy('num_ratings', 'desc')
+        $themes = Theme::orderBy('last_updated', 'desc')
                         ->orderBy('downloaded', 'desc')
-                        ->orderBy('last_updated', 'desc')
+                        ->orderBy('rating', 'desc')
+                        ->orderBy('num_ratings', 'desc')
                         ->paginate(9);
 
         return view('themes.index', ['themes' => $themes]);
@@ -46,5 +46,15 @@ class ThemesController extends Controller
             'title' => $title,
             'curmonth' => $curmonth
             ]);
+    }
+
+    public function popular(){
+        $themes = Theme::orderBy('downloaded', 'desc')
+                        ->orderBy('rating', 'desc')
+                        ->orderBy('num_ratings', 'desc')
+                        ->orderBy('last_updated', 'desc')
+                        ->paginate(9);
+
+        return view('themes.popular', ['themes' => $themes]);
     }
 }
