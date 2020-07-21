@@ -16,7 +16,7 @@
                     <li><a class="text-muted" href="/recent">Latest</a></li>
                     <li><a class="text-muted" href="/featured">Featured</a></li>
                     <li><a class="text-muted" href="/featured">All themes</a></li>
-                    <li><a class="text-muted" href="#">Best selling</a></li>
+                    <li><a class="text-muted" href="/popular">Popular</a></li>
                     <li><a class="text-muted" href="#">Creative</a></li>
                     <li><a class="text-muted" href="#">WooCommerce</a></li>
                 </ul>
