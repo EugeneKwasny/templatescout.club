@@ -33,6 +33,7 @@
                 <h6>Follow us</h6>
                 <ul class="list-unstyled mb-0">
                     <li><a class="text-muted" target="blank" rel="nofollow" href="https://profiles.wordpress.org/templatescout/">WordPress.org</a></li>
+                    <li><a class="text-muted" target="blank" rel="nofollow" href="https://github.com/TemplateScout">GitHub</a></li>
                     <li><a class="text-muted" target="blank" rel="nofollow" href="https://www.facebook.com/TemplateScout-105070061288581">Facebook</a></li>
                     <li><a class="text-muted" target="blank" rel="nofollow" href="https://twitter.com/templatescout">Twitter</a></li>
                     <li><a class="text-muted" target="blank" rel="nofollow" href="https://www.behance.net/TemplateScout">Behance</a></li>
