@@ -24,8 +24,17 @@ class Kernel extends ConsoleKernel
      */
     protected function schedule(Schedule $schedule)
     {
-       $schedule->command('theme_list:get')->dailyAt('00:00')->timezone('America/New_York');;
-       $schedule->command('theme_item:update')->dailyAt('00:30')->timezone('America/New_York');;
+       $schedule
+       ->command('theme_list:get')
+       ->dailyAt('00:00')
+       ->timezone('America/New_York')
+       ->emailOutputOnFailure('e.kvasnyi@@gmail.com');
+
+       $schedule
+       ->command('theme_item:update')
+       ->dailyAt('00:30')
+       ->timezone('America/New_York')
+       ->emailOutputOnFailure('e.kvasnyi@@gmail.com');
     }
 
     /**
