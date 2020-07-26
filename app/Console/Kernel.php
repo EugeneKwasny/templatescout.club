@@ -28,13 +28,19 @@ class Kernel extends ConsoleKernel
        ->command('theme_list:get')
        ->dailyAt('00:00')
        ->timezone('America/New_York')
-       ->emailOutputOnFailure('e.kvasnyi@@gmail.com');
+       ->emailOutputOnFailure('e.kvasnyi@gmail.com');
+
+       $schedule
+       ->command('set_theme:tags')
+       ->dailyAt('00:20')
+       ->timezone('America/New_York')
+       ->emailOutputOnFailure('e.kvasnyi@gmail.com');
 
        $schedule
        ->command('theme_item:update')
        ->dailyAt('00:30')
        ->timezone('America/New_York')
-       ->emailOutputOnFailure('e.kvasnyi@@gmail.com');
+       ->emailOutputOnFailure('e.kvasnyi@gmail.com');
     }
 
     /**
