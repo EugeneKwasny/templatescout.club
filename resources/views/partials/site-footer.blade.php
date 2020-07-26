@@ -15,10 +15,10 @@
                 <ul class="list-unstyled mb-0">
                     <li><a class="text-muted" href="/recent">Latest</a></li>
                     <li><a class="text-muted" href="/featured">Featured</a></li>
-                    <li><a class="text-muted" href="/featured">All themes</a></li>
+                    <li><a class="text-muted" href="/themes">All themes</a></li>
                     <li><a class="text-muted" href="/popular">Popular</a></li>
-                    <li><a class="text-muted" href="#">Creative</a></li>
-                    <li><a class="text-muted" href="#">WooCommerce</a></li>
+                    <li><a class="text-muted" href="/tag/creative">Creative</a></li>
+                    <li><a class="text-muted" href="/tag/ecommerce">WooCommerce</a></li>
                 </ul>
             </div>
             <div class="widget col-sm mt-4 mt-sm-0">
