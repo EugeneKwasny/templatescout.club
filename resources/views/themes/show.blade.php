@@ -34,12 +34,24 @@
 
                         @if($theme->specifications())
 
-                        <h6 class="mt-4 mt-md-0 font-weight-bold">Specifications:</h6>
+                        <h6 class="mt-5 font-weight-bold">Specifications:</h6>
                         {{-- <hr class="mt-0"> --}}
                             <ul class="list-unstyled" style="column-count:3">
                             @foreach ($theme->specifications() as $spec)
-                                <li>- {{$spec}}</li>
+                                <li>{{$spec}}</li>
                             @endforeach
+                            </ul>
+                        @endif
+
+  
+                        @if($tags)
+                            {{-- <h6 class="mt-4 mt-md-0 font-weight-bold"></h6>              --}}
+                            <ul class="mt-5 list-inline">
+                               <li class="list-inline-item  font-weight-bold">Tags:</li>
+                                @foreach ($tags as $tag)
+                                   <li class="list-inline-item">
+                                   <a href="{!!$tag->tag_path()!!}">{{ucfirst($tag['title'])}}</a></li> 
+                                @endforeach
                             </ul>
                         @endif
                     </div>
