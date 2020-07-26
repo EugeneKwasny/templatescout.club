@@ -7,3 +7,19 @@
 
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
+
+
+
+.card-columns {
+    @include media-breakpoint-up(sm) {
+      column-count: 2;
+    }
+}
+
+.card-columns {
+    &.columns-3{
+        @include media-breakpoint-up(sm) {
+            column-count: 3;
+          }
+    }
+}
