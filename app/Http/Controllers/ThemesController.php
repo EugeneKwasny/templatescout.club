@@ -111,7 +111,12 @@ class ThemesController extends Controller
     public function byTag($slug)
     {
         $tagObject = \App\Tag::where('slug', $slug)->firstOrFail();
-        $themes = $tagObject->themes()->paginate(10);
+        $themes = $tagObject->themes()
+                            ->orderBy('last_updated', 'desc')
+                            ->orderBy('downloaded', 'desc')
+                            ->orderBy('rating', 'desc')
+                            ->orderBy('num_ratings', 'desc')
+                            ->paginate(10);
 
         $meta_tags['title'] = '100+ Collection of  Free ' . ucfirst($tagObject->title) . ' WordPress Themes Handpicked by TemplateScout';
         $meta_tags['description'] =  'Download now Collection of Free '.ucfirst($tagObject->title).'  WordPress Themes Handpicked by TemplateScout!';
