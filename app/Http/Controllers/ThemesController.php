@@ -16,8 +16,15 @@ class ThemesController extends Controller
         $tagsArray = $tags->toArray();
         $tag = end($tagsArray);
 
-        $meta_tags['title'] = $theme->name . ' - Free '. ucfirst($tag['title']) .' Wordpress Theme';
-        $meta_tags['description'] =  'Download now ' . $theme->name. ' - Free '. ucfirst($tag['title']) .' Wordpress Theme HandPicked by TemplateScout';
+        if($tag){
+            $meta_tags['title'] = $theme->name . ' - Free '. ucfirst($tag['title']) .' Wordpress Theme';
+            $meta_tags['description'] =  'Download now ' . $theme->name. ' - Free '. ucfirst($tag['title']) .' Wordpress Theme HandPicked by TemplateScout';
+
+        }else{
+            $meta_tags['title'] = $theme->name . ' - Free Wordpress Theme';
+            $meta_tags['description'] =  'Download now ' . $theme->name. ' - Free Wordpress Theme HandPicked by TemplateScout';
+
+        }
 
         return view('themes.show', ['theme' => $theme, 'tags'=> $tags, 'meta_tags' => $meta_tags,]);
     }
