@@ -83,7 +83,7 @@ class UpdateThemeItem extends Command
                         'description' => $themeArray['sections']['description'],
                         'template' => $themeArray['template'] ?? null,
                         'download_link' => $themeArray['download_link'],
-                        'tags' => json_encode($themeArray['tags']),
+                        'specifications' => json_encode($themeArray['tags']),
                         'checksum' => $newChecksum 
                     ])->save();
 
