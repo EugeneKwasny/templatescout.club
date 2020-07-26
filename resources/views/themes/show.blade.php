@@ -32,8 +32,15 @@
                             <p class="card-text">{{$theme->description}}</p>
                         @endif
 
-                        @if($theme->tags())
-                            <p class="card-text text-muted">Tags: {{$theme->tags()}}</p>
+                        @if($theme->specifications())
+
+                        <h6 class="mt-4 mt-md-0 font-weight-bold">Specifications:</h6>
+                        {{-- <hr class="mt-0"> --}}
+                            <ul class="list-unstyled" style="column-count:3">
+                            @foreach ($theme->specifications() as $spec)
+                                <li>- {{$spec}}</li>
+                            @endforeach
+                            </ul>
                         @endif
                     </div>
                   </div>
