@@ -13,8 +13,13 @@ class ThemesController extends Controller
   
         $theme = Theme::with('tags')->where('slug', $slug)->firstOrFail();
         $tags = $theme->tags;
+        $tagsArray = $tags->toArray();
+        $tag = end($tagsArray);
 
-        return view('themes.show', ['theme' => $theme, 'tags'=> $tags]);
+        $meta_tags['title'] = $theme->name . ' - Free '. ucfirst($tag['title']) .' Wordpress Theme';
+        $meta_tags['description'] =  'Download now ' . $theme->name. ' - Free '. ucfirst($tag['title']) .' Wordpress Theme HandPicked by TemplateScout';
+
+        return view('themes.show', ['theme' => $theme, 'tags'=> $tags, 'meta_tags' => $meta_tags,]);
     }
 
 

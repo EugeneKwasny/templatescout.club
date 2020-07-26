@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
-@section('title', $theme->name . ' - free Wordpress Theme')
-@section('description', 'Download now ' . $theme->name. ' - free Wordpress Theme HandPicked by TemplateScout')
+@section('title', $meta_tags['title'])
+@section('description', $meta_tags['description'])
 @section('styles')
     <link rel="stylesheet" href="{{ mix('/css/themes.show.css') }}">
 @endsection
