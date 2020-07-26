@@ -23,7 +23,11 @@ class Theme extends Model
             return;
         }
 
-        $rejectList = ['blog', 'e-commerce', 'news'];
+        $rejectList = [
+            'blog', 'e-commerce', 'news', 'education',  
+            'entertainment',  'food & drink',  'holiday',  'news',
+            'photography',  'portfolio'
+        ];
 
         $specificationsArray = json_decode($this->specifications);
 
