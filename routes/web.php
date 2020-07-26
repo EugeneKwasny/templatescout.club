@@ -25,3 +25,4 @@ Route::get('/recent', 'ThemesController@recent');
 Route::get('/featured', 'ThemesController@featured');
 Route::get('/themes', 'ThemesController@index');
 Route::get('/themes/{slug}', 'ThemesController@show')->name('theme_path');
+Route::get('/tag/{slug}', 'ThemesController@byTag')->name('tag_path');
