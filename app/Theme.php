@@ -17,17 +17,27 @@ class Theme extends Model
         return route('theme_path', ['slug' => $this->slug]);
     }
 
-    public function tags(){
-        if(!$this->tags){
+    
+    public function specifications(){
+        if(!$this->specifications){
             return;
         }
 
-        $tagsArray = json_decode($this->tags);
+        $rejectList = ['blog', 'e-commerce', 'news'];
 
-        foreach($tagsArray as $slug=>$label){
-            $tags[] = $label;
+        $specificationsArray = json_decode($this->specifications);
+
+
+
+        foreach($specificationsArray as $slug=>$label){
+            if(in_array($slug, $rejectList)){
+                continue;
+            }
+            $specifications[] = $label;
         }
 
-        return implode(', ', $tags);
+        return $specifications;
+
+        //return implode(', ', $specifications);
     }
 }
