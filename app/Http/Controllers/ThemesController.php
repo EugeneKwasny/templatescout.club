@@ -74,7 +74,7 @@ class ThemesController extends Controller
         $themes = Theme::where('created_at', '>=', $date->format('Y-m-d'))
                         ->orderBy('created_at', 'desc')
                         ->orderBy('downloaded', 'desc')
-                        ->paginate(10);
+                        ->paginate(9);
 
         $meta_tags['title'] = 'Recently Added Free WordPress Themes | '. $date->format('F, Y');
         $meta_tags['description'] =  'Download Free WordPress Themes Handpicked by TemplateScout team!';
