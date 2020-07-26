@@ -17,7 +17,12 @@ class Theme extends Model
         return route('theme_path', ['slug' => $this->slug]);
     }
 
+    public function tags(){
+        return $this->belongsToMany('App\Tag');
+    }
     
+
+
     public function specifications(){
         if(!$this->specifications){
             return;
