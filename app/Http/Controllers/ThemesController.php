@@ -73,8 +73,8 @@ class ThemesController extends Controller
     }
 
     public function recent(){
-        //$date = Carbon::now();
-        $date = Carbon::create(2020, 07, 19);
+        $date = Carbon::now();
+        //$date = Carbon::create(2020, 07, 19);
         $curmonth = $date->format('F, Y');
 
 
