@@ -74,19 +74,20 @@ class ThemesController extends Controller
 
     public function recent(){
         $date = Carbon::now();
+
+       $start= $date->firstOfMonth();
         //$date = Carbon::create(2020, 07, 19);
         $curmonth = $date->format('F, Y');
 
-
-        $themes = Theme::where('created_at', '>=', $date->format('Y-m-d'))
+        $themes = Theme::where('created_at', '>=', $start->format('Y-m-d'))
                         ->orderBy('created_at', 'desc')
                         ->orderBy('downloaded', 'desc')
                         ->paginate(9);
 
-        $meta_tags['title'] = 'Recently Added Free WordPress Themes | '. $date->format('F, Y');
+        $meta_tags['title'] = 'Recently Added Free WordPress Themes | '. $curmonth;
         $meta_tags['description'] =  'Download Free WordPress Themes Handpicked by TemplateScout team!';
         $h1 = 'Recent WordPress Themes';
-        $intro = 'Every day we select & aggregate WordPress themes created in July 2020 by WP community theme authors. Items are sorted by date of creation and current downloads counter. So, on this page, you can quickly find trendy items of the current month.';
+        $intro = 'Every day we select & aggregate WordPress themes created in '.$curmonth.' by WP community theme authors. Items are sorted by date of creation and current downloads counter. So, on this page, you can quickly find trendy items of the current month.';
 
         return view('themes.recent', [
             'themes' => $themes, 
